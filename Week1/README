@@ -1,0 +1,5 @@
+    git config --global user.name "Priscila Kobayashi"
+    git config --global user.email nov24002@byui.edu
+
+
+    git push --set-upstream origin main
