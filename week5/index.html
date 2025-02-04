@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
+    <link rel="stylesheet" href="week5/style.css">
+</head>
+<body>
+    <!--
+    Button Styles:
+    -Middle/center of the page
+    -Needs a hover effect
+    -Background color
+    -Border, padding
+    -Border radius
+    -Box show
+    -(transitions)
+    -->
+    <header>This is Button Page</header>
+    <button id="click-me-btn">Click Me!</button>
+    <script>
+        const el = document.getElementById("click-me-btn");
+        el.onclick = function() {
+            document.body.style.backgroundColor = "#ffe188";
+        };
+
+        el.onmouseout = function() {
+            document.body.style.backgroundColor = "#lightgreen";
+        };
+    </script>
+</body>
+</html>
