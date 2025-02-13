@@ -1,5 +1,6 @@
 html, body{
-    height: 
+    height: 200px;
+    
 }
 
 body{
@@ -10,16 +11,15 @@ body{
 
 .click-me-btn{
 text-align: center;
-background-color: coral;
-border: solid 1px coral;
-color: steelblue;
-font-size: 30px;
-padding: 20px 30px;
-cursor: pointer;
-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 2);
 }
 
 #click-me-btn:hover{
-    background-color: black;
+    background-color: coral;
+    border: solid 1px rgb(255, 253, 197); 
+    color: blue;
+    font-size: 30px;
+    padding: 20px 30px;
+    cursor: pointer;
+    box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 2);
 
 }
