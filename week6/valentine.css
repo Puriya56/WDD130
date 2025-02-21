@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(254, 188, 243);
+}
+.square{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+}
+.triangle{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 200px solid whitesmoke;
+    transform-origin: top center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.envelope:hover triangle{
+    transform: rotateX(180deg);
+}
