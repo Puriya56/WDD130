@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-color: #011057;
+  --secondary-color: #fffcf2;
+  --accent1-color: #ff88cc;
+  --accent2-color: #f8c100;
+
+  --font-main: 'Open Sans', sans-serif;
+  --font-title: 'Baloo 2';
+  --font-alt: 'Lato', sans-serif;
+}
+
+/* Reset and basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  /* Header and navigation */
+  header {
+    background-color: #011057;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px 0 0 10px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  
+  nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: #ff88cc;
+  }
+  
+  /* Images and section side by side */
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  .section .text,
+  .section .image {
+    flex: 1 1 45%;
+  }
+  
+  .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Reviews */
+  .reviews {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #011057;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-menu,
+  .social-media {
+    flex: 1 1 45%;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .social-media i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .guiding-you img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }

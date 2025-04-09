@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses | Osero Academy</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .quick-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Intro */
+    .intro {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Course Cards - vertical layout */
+    .courses {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course-text {
+      padding: 1rem 1.5rem;
+    }
+
+    .course-text h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
+
+    /* Questions Section */
+    .questions {
+      background-color: #e9f2ff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .questions h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #002244;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-menu a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .footer-menu a:hover {
+      text-decoration: underline;
+    }
+
+    .social-media img {
+      width: 30px;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <img src="styles/images/osero.png" alt="Osero Academy Logo" class="logo" />
+      <nav class="quick-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <section class="intro">
+      <h1>Explore Our Courses</h1>
+      <p>At Osero Academy, we offer a wide variety of learning paths to help you succeed in language learning, programming, and beyond!</p>
+    </section>
+
+    <section class="courses">
+      <div class="course-card">
+        <img src="styles/images/language-course.jpg" alt="Language Course" />
+        <div class="course-text">
+          <h2>Language Courses</h2>
+          <p>Master Japanese, English, and other world languages through immersive learning and conversation practice.</p>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="styles/images/programming-course.jpg" alt="Programming Course" />
+        <div class="course-text">
+          <h2>Programming Courses</h2>
+          <p>Learn Python, HTML/CSS, JavaScript, and more with interactive projects and mentorship.</p>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="styles/images/ai-course.jpg" alt="AI Course" />
+        <div class="course-text">
+          <h2>AI & Data Science</h2>
+          <p>Explore the world of AI, machine learning, and data visualization to prepare for the future of work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <h2>Got Questions?</h2>
+      <p>Check our <a href="faq.html">FAQ page</a> or <a href="contact.html">contact us</a> directly for personalized support!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-menu">
+        <a href="site-plan.html">Site Plan</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="styles/images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="styles/images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="styles/images/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
